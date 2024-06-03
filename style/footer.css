@@ -19,7 +19,6 @@ Estilos para el footer y sus elementos
   display: inline-flex;
 }
 .footer_section{
-  /* background-color: red; */
   max-width: 30%;
   color: white;
   margin: auto;
@@ -39,8 +38,6 @@ Estilos para el footer y sus elementos
 .img_icons{
   margin: 0;
   width: 20px;
-  /* border-radius: 15% 40%; */
-  /* background-color: whitesmoke; */
   filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(0%) hue-rotate(286deg) brightness(103%) contrast(103%);
 }
 .img_icons:hover{
