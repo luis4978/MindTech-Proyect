@@ -98,9 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let validar = true;
 
         // validar campo email
-        validar = validarEmail('email', 'el correo electronico no es valido') && validar;
+        validar = validarEmail('exampleInputEmail1', 'el correo electronico no es valido') && validar;
         // validar contraseña
-        validar = validarCampo('password', 'la contraseña es obligatoria') && validar;
+        validar = validarCampo('exampleInputPassword1', 'la contraseña es obligatoria') && validar;
 
         return validar;
     }

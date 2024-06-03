@@ -10,52 +10,20 @@
     font-family: 'Nunito', sans-serif;
 }
 
-body{
-    background-color: #181419;
-    color:white; 
-     /* scrollbar-color: #9f3647  #181419; /*nuevo
-     scrollbar-width: thin;*/
-}
-.bodyRegistrarse{
-    height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url("bg-register.jpg");
+
+.container{
+    height: 70vh;
+    background:linear-gradient(to right top, #24242473,#24242473);
     background-size: cover;
     background-position: center;
-    .headerRegistrarse{
-        color:#ffffff;
-        height: 8vh;
-        padding:30px;
-        .anclaLogo{
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.2rem;
-             /*animacion hover*/
-            &:hover{
-                animation: tilt-n-move-shaking 0.25s infinite;
-            }
-        }
+    position: static;
+
+    label{
+        color: #ffffff;
     }
+    
+
     .main{
-         /*seccion de registrarse.html*/
-        .seccionRegistrarse{
-            background-color:rgb(42, 42, 42);
-            width: 30%;
-            margin:0 auto;
-            border-radius: 5px;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            font-size:1.2rem;
-            .tituloRegistrarse{
-                font-size: 2.5rem;
-                font-weight: 700;
-                margin-bottom: 20px;
-            }
-            /*seleccionar todos los input menos el checkbox*/
             form{
                 width: 100%;
                 padding:40px;
@@ -66,7 +34,7 @@ body{
                     padding: 0px 20px;
                     font-size: 1.2rem;
                     border-radius: 20px;
-                    border: 2px solid #9f3647;
+                    border: 2px solid rgb(29, 152, 224);
                     background-color: #333333;
                     outline: none;
                     color:rgb(255, 255, 255);
@@ -76,44 +44,22 @@ body{
                 }
                 .error-text{
                     color: #ff0000;
-                    font-size: 0.8rem;
+                    font-size: 1rem;
                     margin-top:0px;
                     margin-bottom: 10px;
                 }
-              
-                .terminos{
-                    font-size: 0.8rem;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .textoCheck{
-                        margin-left: 10px;
-                    }
-                }
                 .boton{
-                    width: 87%;
+                    width: 30%;
                     box-sizing: content-box;
-                    background-color:#9f3647;
-                    border: 2px solid #9f3647;
+                    background-color: rgb(29, 152, 224);
+                    border: 2px solid  rgb(29, 152, 224);
                     color: #ffffff;
                     padding: 1rem 1rem;
-                    border-radius: 5px;
+                    border-radius: 1rem;
                     font-size: 1rem;
-                    font-weight: 500;
-                   
-                }
-                .ayuda{
-                    margin-top:40px;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    color: #787878;
-                    font-weight:400;
-                   
+                    font-weight: 500;  
                 }
             }
-           
-        }
-   
     }
 }
 
@@ -121,20 +67,9 @@ body{
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
-    .bodyRegistrarse{
-        .headerRegistrarse{
-            padding:20px;
-            .anclaLogo{
-                font-size: 1rem;
-            }
-        }
+    
         .main{
-            .seccionRegistrarse{
-                width: 95%;
-                padding: 10px 10px;
-                .tituloRegistrarse{
-                    font-size: 2rem;
-                }
+            
                form{
                 width: 100%;
                 text-align: center;
@@ -161,9 +96,5 @@ body{
                     font-size: 0.8rem;
                 }
                }
-               
-            }
         }
-    }
-
 }
